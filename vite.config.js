@@ -4,12 +4,12 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
     build: {
         lib: {
-            entry: "./src/index.js", // Entry point
+            entry: "./src/index.js", 
             name: "ReactPrismJSComponent",
             fileName: (format) => `react-prismjs-component.${format}.js`,
         },
         rollupOptions: {
-            external: ["react", "react-dom"], // Only exclude React and ReactDOM
+            external: ["react", "react-dom"], 
             output: {
                 globals: {
                     react: "React",
