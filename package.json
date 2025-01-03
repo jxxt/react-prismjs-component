@@ -1,0 +1,45 @@
+{
+    "name": "react-prismjs-component",
+    "version": "1.0.0",
+    "description": "PrismJs Component Library to render Syntax Highlighting in React",
+    "main": "dist/react-prismjs-component.cjs.js",
+    "module": "dist/react-prismjs-component.es.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "vite build",
+        "prepublishOnly": "npm run build"
+    },
+    "keywords": [
+        "npm",
+        "react",
+        "prism",
+        "library",
+        "syntax",
+        "highlighting",
+        "code",
+        "snippet"
+    ],
+    "author": "Jeet Debnath",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/jxxt/react-prismjs-component/issues"
+    },
+    "homepage": "https://github.com/jxxt/react-prismjs-component#readme",
+    "dependencies": {
+        "prismjs": "^1.29.0"
+    },
+    "peerDependencies": {
+        "react": "^17.0.0 || ^18.0.0",
+        "react-dom": "^17.0.0 || ^18.0.0"
+    },
+    "peerDependenciesMeta": {
+        "react": {
+            "optional": false
+        },
+        "react-dom": {
+            "optional": false
+        }
+    }
+}
