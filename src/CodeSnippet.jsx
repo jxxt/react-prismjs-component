@@ -5,8 +5,8 @@ import Prism from "prismjs";
 import "prismjs/plugins/line-numbers/prism-line-numbers";
 import "prismjs/plugins/line-numbers/prism-line-numbers.css";
 
-import clipboardIcon from "../assets/clipboard.svg";
-import tickIcon from "../assets/check.svg";
+import clipboardIcon from "./assets/clipboard.svg";
+import tickIcon from "./assets/tick.svg";
 
 import styles from "./CodeSnippet.module.css";
 
