@@ -9,17 +9,17 @@ export default defineConfig({
             fileName: (format) => `react-prismjs-component.${format}.js`,
         },
         rollupOptions: {
-            external: ["react", "react-dom"],
+            external: ["react", "react-dom"], // Remove prismjs from external
             output: {
                 globals: {
                     react: "React",
                     "react-dom": "ReactDOM",
                 },
                 assetFileNames: (assetInfo) => {
-                    if (assetInfo.name.endsWith('.css')) {
-                        return 'styles/[name][extname]';
+                    if (assetInfo.name.endsWith(".css")) {
+                        return "styles/[name][extname]";
                     }
-                    return 'assets/[name][extname]';
+                    return "assets/[name][extname]";
                 },
             },
         },
@@ -27,8 +27,8 @@ export default defineConfig({
     plugins: [react()],
     css: {
         modules: {
-            localsConvention: 'camelCase',
-            generateScopedName: '[name]__[local]___[hash:base64:5]'
-        }
-    }
+            localsConvention: "camelCase",
+            generateScopedName: "[name]__[local]___[hash:base64:5]",
+        },
+    },
 });
