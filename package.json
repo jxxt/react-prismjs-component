@@ -1,15 +1,23 @@
 {
     "name": "react-prismjs-component",
     "version": "1.0.0",
-    "description": "PrismJs Component Library to render Syntax Highlighting in React",
+    "description": "PrismJS Component Library to render Syntax Highlighting in React",
     "main": "dist/react-prismjs-component.cjs.js",
     "module": "dist/react-prismjs-component.es.js",
+    "style": "dist/styles/style.css",
     "files": [
-        "dist"
+        "dist",
+        "dist/styles",
+        "dist/assets",
+        "README.md"
     ],
     "scripts": {
         "build": "vite build",
         "prepublishOnly": "npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jxxt/react-prismjs-component.git"
     },
     "keywords": [
         "npm",
@@ -27,19 +35,15 @@
         "url": "https://github.com/jxxt/react-prismjs-component/issues"
     },
     "homepage": "https://github.com/jxxt/react-prismjs-component#readme",
-    "dependencies": {
-        "prismjs": "^1.29.0"
-    },
     "peerDependencies": {
         "react": "^17.0.0 || ^18.0.0",
         "react-dom": "^17.0.0 || ^18.0.0"
     },
-    "peerDependenciesMeta": {
-        "react": {
-            "optional": false
-        },
-        "react-dom": {
-            "optional": false
-        }
+    "dependencies": {
+        "prismjs": "^1.29.0"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-react": "^4.0.3",
+        "vite": "^4.4.5"
     }
 }
