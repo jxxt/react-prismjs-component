@@ -1,0 +1,6 @@
+# Ignore everything in node_modules
+node_modules/*
+
+# Except the prismjs package
+!node_modules/prismjs
+!node_modules/@types/prismjs

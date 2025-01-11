@@ -1,1 +1,2 @@
-export { default as CodeSnippet } from "./CodeSnippet";
+import CodeSnippet from "./components/CodeSnippet.jsx";
+export default CodeSnippet;
