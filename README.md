@@ -1,7 +1,7 @@
-<h1 style="text-align:center;">ReactJs + PrismJs</h1>
-<p  style="text-align:center;">PrismJs Component Library to render Syntax Highlighting for Code Snippets in ReactJs</p>
+<h1 align="center">ReactJs + PrismJs</h1>
+<p align="center">PrismJs Component Library to render Syntax Highlighting for Code Snippets in ReactJs</p>
 
-<p  style="text-align:center;">
+<p align="center">
     <img alt="NPM Version" src="https://img.shields.io/npm/v/react-prismjs-component">
     <img alt="NPM Downloads" src="https://img.shields.io/npm/dm/react-prismjs-component">
     <img alt="NPM License" src="https://img.shields.io/npm/l/react-prismjs-component">
@@ -29,13 +29,13 @@ function App() {
 
     return (
         <div>
-            <CodeSnippet 
-                code={sampleCode} 
-                language="javascript" 
-                theme="okaidia" 
+            <CodeSnippet
+                code={sampleCode}
+                language="javascript"
+                theme="okaidia"
                 codeIcon="/path/to/icon.svg"
-    		/>
-    	</div>
+            />
+        </div>
     );
 }
 
@@ -44,28 +44,28 @@ export default App;
 
 ---
 
-
 ## Props for CodeSnippet
 
-| Prop Name   | Type     | Default    | Description                                      |
-|-------------|----------|------------|--------------------------------------------------|
-| `code`      | string   | Required   | The code snippet to display.                    |
-| `language`  | string   | `markup`   | The programming language for syntax highlighting.|
-| `theme`     | string   | `default`  | The theme to use for syntax highlighting.        |
-| `codeIcon`  | string   | `null`     | Path to a custom icon for the code file.         |
+| Prop Name  | Type   | Default   | Description                                       |
+| ---------- | ------ | --------- | ------------------------------------------------- |
+| `code`     | string | Required  | The code snippet to display.                      |
+| `language` | string | `markup`  | The programming language for syntax highlighting. |
+| `theme`    | string | `default` | The theme to use for syntax highlighting.         |
+| `codeIcon` | string | `null`    | Path to a custom icon for the code file.          |
 
 ---
 
 ## Supported Themes
 
 The following themes are supported:
-- `okaidia`
-- `tomorrow`
-- `dark`
-- `default`
-- `twilight`
-- `coy`
-- `solarizedlight`
+
+-   `okaidia`
+-   `tomorrow`
+-   `dark`
+-   `default`
+-   `twilight`
+-   `coy`
+-   `solarizedlight`
 
 To apply a theme, pass its name to the `theme` prop.
 
