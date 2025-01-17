@@ -1,6 +1,6 @@
 {
     "name": "react-prismjs-component",
-    "version": "0.1.1",
+    "version": "0.1.5",
     "description": "PrismJS Component Library to render Syntax Highlighting in React",
     "main": "src/index.js",
     "repository": {
