@@ -1,6 +1,7 @@
 .codeSnippetContainer {
     position: relative;
     margin: 20px 0;
+    width: 800px;
 }
 
 .iconContainer {
@@ -34,6 +35,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
 }
 
 .copyButton:focus {
@@ -42,4 +45,8 @@
 
 .copyButton:hover .icon {
     transform: scale(1.1);
+}
+
+pre {
+    border-radius: 13px;
 }

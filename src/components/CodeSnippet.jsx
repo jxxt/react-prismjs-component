@@ -55,7 +55,7 @@ const languages = {
     haskell: () => import("../imports/components/prism-haskell"),
 };
 
-const CodeSnippet = ({ code, language, theme, codeIcon }) => {
+const CodeSnippet = ({ code, language, theme, codeIcon, width }) => {
     const [isHovered, setIsHovered] = useState(false);
     const [isCopied, setIsCopied] = useState(false);
     const [loadError, setLoadError] = useState(null);
@@ -106,6 +106,7 @@ const CodeSnippet = ({ code, language, theme, codeIcon }) => {
             className={styles.codeSnippetContainer}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
+            style={{ width: width }}
         >
             <div className={styles.iconContainer}>
                 {!isHovered ? (
