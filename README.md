@@ -53,6 +53,7 @@ function App() {
                 language="javascript"
                 theme="okaidia"
                 codeIcon="/path/to/icon.svg"
+                width="1000px"
             />
         </div>
     );
@@ -69,6 +70,7 @@ export default App;
 | `language` | string | `markup`  | The programming language for syntax highlighting. |
 | `theme`    | string | `default` | The theme to use for syntax highlighting.         |
 | `codeIcon` | string | `null`    | Path to a custom icon for the code file.          |
+| `width`    | string | `800px`   | Width of the CodeSnippet component.               |
 
 ## Supported Themes
 
